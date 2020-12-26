@@ -56,12 +56,5 @@ export default {
   z-index: -1;
 }
 
-.main-content{
-  /* padding: 70px 359px 0px; */
-}
-/* .history-cards{
-  padding-left: 310.8px;
-  border: 1px solid red;
-} */
 
 </style>
