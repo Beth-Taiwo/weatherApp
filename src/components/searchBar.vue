@@ -9,7 +9,7 @@
         </div>
         <information :location="location" :temperature="temp" :desp="description" :feels="feels" :wind="wind" :visibility="visibility" :updatedTime="date" :iconDisplay="imgLink"/>
 
-        <history :history="history" :iconDisplay="imgLink"/>  
+        <history :history="history"/>  
     </div>
 </template>
 <script>
@@ -70,7 +70,8 @@ export default {
                     country: this.location,
                     temperature: this.temp,
                     description: this.description,
-                    date: this.date
+                    date: this.date,
+                    icon: this.imgLink,
                 }
                 this.history.push(historyDetail);
                 console.log(this.history)

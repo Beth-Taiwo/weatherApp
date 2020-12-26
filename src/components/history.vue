@@ -6,7 +6,7 @@
                 <!-- <div v-for="hi in 7" :key="hi"> -->
                     <div>
                         <p><small>{{ hist.country }}</small></p>
-                        <span><img :src="iconDisplay" alt="an icon here" /></span>
+                        <span><img :src="hist.icon"  alt="an icon here" /></span>
                         <h6 class="temp">{{ hist.temperature }}<span>&deg;C</span></h6>
                         <p class="desp"><small>{{ hist.description }}</small></p>
                     </div>
@@ -18,7 +18,7 @@
 </template>
 <script>
 export default {
-    props: ['history','iconDisplay'],
+    props: ['history'],
     data(){
         return{
         }
@@ -48,10 +48,9 @@ export default {
     border-top: 1px solid; 
     text-align: center;
     margin-top: 12px;
-}
-.small-text{
     font-size: 12px;
 }
+
 span img{
     width: 34px;
     height: 34px;
